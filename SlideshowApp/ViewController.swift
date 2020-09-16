@@ -16,6 +16,12 @@ class ViewController: UIViewController {
     //ラベルを表示する変数
     @IBOutlet weak var seasonLabel: UILabel!
     
+    @IBOutlet weak var moveToButton: UIButton!
+    
+    @IBOutlet weak var backButton: UIButton!
+    
+    @IBOutlet weak var stopButton: UIButton!
+    
     //スライドショーに使うタイマー
     var timer: Timer!
     
@@ -108,6 +114,18 @@ class ViewController: UIViewController {
             
             //タイマーをセットする
             timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(updateTimer(_:)), userInfo: nil, repeats: true)
+            
+            //ボタンの名前を停止に変更する
+            stopButton.setTitle("停止", for: .normal)
+            
+            //進むボタン、戻るボタンを機能させない
+            moveToButton.isEnabled = false
+            backButton.isEnabled = false
+            
+            //進むボタン、戻るボタンを半透明化させる
+            moveToButton.alpha = 0.5
+            backButton.alpha = 0.5
+            
         } else {
             
             //タイマーを停止する
@@ -115,6 +133,17 @@ class ViewController: UIViewController {
             
             //タイマーを停止中にする（nilを使う事で再生中・停止中の判定を行なっている）
             timer = nil
+            
+            //ボタンの名前を再生に変更する
+            stopButton.setTitle("再生", for: .normal)
+            
+            //進むボタン、戻るボタンを機能させる
+            moveToButton.isEnabled = true
+            backButton.isEnabled = true
+            
+            //進むボタン、戻るボタンの半透明化を戻す
+            moveToButton.alpha = 1.0
+            backButton.alpha = 1.0
         }
     }
     
@@ -145,5 +174,3 @@ class ViewController: UIViewController {
         seasonLabel.text = seasonText[slide_sec]
     }
 }
-
-//明日のためにメモ：print関数を使った事で下記のデバックエリアにのみ表示されてしまい、肝心のシュミレーターには反映されていない。尚「進む」ボタンを押せば押すほどデバックに反映される

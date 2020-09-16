@@ -15,28 +15,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODU-d1-m8w">
-                                <rect key="frame" x="147.5" y="567" width="80" height="50"/>
-                                <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="6OD-C2-dNs"/>
-                                    <constraint firstAttribute="height" constant="50" id="evb-m9-5g1"/>
-                                </constraints>
-                                <state key="normal" title="戻る">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="backButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4NJ-7K-Kn4"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZM6-WL-d1m">
-                                <rect key="frame" x="247.5" y="567" width="100" height="50"/>
+                                <rect key="frame" x="247.5" y="567" width="80" height="50"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="7Kd-Nb-ZaQ"/>
-                                    <constraint firstAttribute="width" constant="100" id="UEM-0s-4k8"/>
+                                    <constraint firstAttribute="width" constant="80" id="ClW-m1-BYX"/>
                                 </constraints>
-                                <state key="normal" title="再生/停止">
+                                <state key="normal" title="再生">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
@@ -72,6 +58,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODU-d1-m8w">
+                                <rect key="frame" x="147.5" y="567" width="80" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="6OD-C2-dNs"/>
+                                    <constraint firstAttribute="height" constant="50" id="evb-m9-5g1"/>
+                                </constraints>
+                                <state key="normal" title="戻る">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4NJ-7K-Kn4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -90,9 +90,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="FSI-Xd-JnW"/>
                     <connections>
                         <outlet property="DefaultImageView" destination="Xs2-cx-ugG" id="gpt-zU-cIm"/>
+                        <outlet property="backButton" destination="ODU-d1-m8w" id="6go-io-EH6"/>
+                        <outlet property="moveToButton" destination="yP9-6P-Oej" id="bjJ-Yt-AUb"/>
                         <outlet property="seasonLabel" destination="Cyv-Vf-m0m" id="nAP-rd-NwC"/>
+                        <outlet property="stopButton" destination="ZM6-WL-d1m" id="fbu-CX-a6S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -107,18 +111,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAw-hr-cXg">
+                                <rect key="frame" x="147.5" y="597" width="80" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="P2m-xA-Iek"/>
+                                    <constraint firstAttribute="height" constant="50" id="dow-Dc-Se9"/>
+                                </constraints>
+                                <state key="normal" title="戻る">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iuN-2z-ZVO">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="583"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cAw-hr-cXg" firstAttribute="centerX" secondItem="ZrV-Hn-HaQ" secondAttribute="centerX" id="9cu-bs-GKe"/>
+                            <constraint firstItem="0d3-ah-ynt" firstAttribute="bottom" secondItem="cAw-hr-cXg" secondAttribute="bottom" constant="20" id="Egp-sC-zg0"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="0d3-ah-ynt"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qjd-yF-8Aw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="540" y="135.38230884557723"/>
+            <point key="canvasLocation" x="456.80000000000001" y="139.880059970015"/>
         </scene>
     </scenes>
 </document>
