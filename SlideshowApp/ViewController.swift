@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     var slide_sec: Int = 0
     
     //画像の宣言
-    var seasonImageNames:[UIImage] = [UIImage(named: "春画像.jpg")!,UIImage(named: "夏画像.jpg")!,UIImage(named: "秋画像.jpg")!,UIImage(named: "冬画像.jpg")!]
+    var seasonImageNames:[UIImage] = [UIImage(named: "spring-seabass-fishing.jpg")!,UIImage(named: "normal.jpg")!,UIImage(named: "unnamed.jpg")!,UIImage(named: "icy-bokeh.jpg")!]
     
     //ラベルの宣言
     var seasonText: [String] = ["春","夏","秋","冬"]
