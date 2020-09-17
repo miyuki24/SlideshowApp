@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
+
     //画像を表示する変数
     @IBOutlet weak var DefaultImageView: UIImageView!
     
@@ -145,6 +145,14 @@ class ViewController: UIViewController {
             moveToButton.alpha = 1.0
             backButton.alpha = 1.0
         }
+    }
+        
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        let expansionViewController:ExpansionViewController = segue.destination as! ExpansionViewController
+        expansionViewController.image2 = seasonImageNames[slide_sec]
+    }
+    
+    @IBAction func unwind(_ segue: UIStoryboardSegue) {
     }
     
     //selector: #selector(updateSlide(_:)) で指定された関数。2秒毎に呼び出される
