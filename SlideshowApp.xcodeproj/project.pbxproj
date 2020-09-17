@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72187D0D251376190034D8E2 /* 冬画像.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 72187D0C251376190034D8E2 /* 冬画像.jpg */; };
+		72187D0F251376200034D8E2 /* 秋画像.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 72187D0E251376200034D8E2 /* 秋画像.jpg */; };
+		72187D11251376280034D8E2 /* 夏画像.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 72187D10251376280034D8E2 /* 夏画像.jpg */; };
+		72187D13251376300034D8E2 /* 春画像.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 72187D12251376300034D8E2 /* 春画像.jpg */; };
 		7228CC72251328CB004B73F7 /* ExpansionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7228CC71251328CB004B73F7 /* ExpansionViewController.swift */; };
 		72B0B5032508FF25006988DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B0B5022508FF25006988DC /* AppDelegate.swift */; };
 		72B0B5052508FF26006988DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B0B5042508FF26006988DC /* SceneDelegate.swift */; };
@@ -14,13 +18,13 @@
 		72B0B50A2508FF26006988DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72B0B5082508FF26006988DC /* Main.storyboard */; };
 		72B0B50C2508FF27006988DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72B0B50B2508FF27006988DC /* Assets.xcassets */; };
 		72B0B50F2508FF27006988DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72B0B50D2508FF27006988DC /* LaunchScreen.storyboard */; };
-		72DBD452251364C500D94341 /* fall in Resources */ = {isa = PBXBuildFile; fileRef = 72DBD451251364C500D94341 /* fall */; };
-		72DBD454251364D000D94341 /* winter in Resources */ = {isa = PBXBuildFile; fileRef = 72DBD453251364D000D94341 /* winter */; };
-		72DBD456251364DE00D94341 /* spring in Resources */ = {isa = PBXBuildFile; fileRef = 72DBD455251364DE00D94341 /* spring */; };
-		72DBD458251364E200D94341 /* summer in Resources */ = {isa = PBXBuildFile; fileRef = 72DBD457251364E200D94341 /* summer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		72187D0C251376190034D8E2 /* 冬画像.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "冬画像.jpg"; path = "../../../Desktop/冬画像.jpg"; sourceTree = "<group>"; };
+		72187D0E251376200034D8E2 /* 秋画像.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "秋画像.jpg"; path = "../../../Desktop/秋画像.jpg"; sourceTree = "<group>"; };
+		72187D10251376280034D8E2 /* 夏画像.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "夏画像.jpg"; path = "../../../Desktop/夏画像.jpg"; sourceTree = "<group>"; };
+		72187D12251376300034D8E2 /* 春画像.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "春画像.jpg"; path = "../../../Desktop/春画像.jpg"; sourceTree = "<group>"; };
 		7228CC71251328CB004B73F7 /* ExpansionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpansionViewController.swift; sourceTree = "<group>"; };
 		72B0B4FF2508FF25006988DC /* SlideshowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideshowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72B0B5022508FF25006988DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -30,10 +34,6 @@
 		72B0B50B2508FF27006988DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72B0B50E2508FF27006988DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72B0B5102508FF27006988DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		72DBD451251364C500D94341 /* fall */ = {isa = PBXFileReference; lastKnownFileType = file; name = fall; path = ../../fall; sourceTree = "<group>"; };
-		72DBD453251364D000D94341 /* winter */ = {isa = PBXFileReference; lastKnownFileType = file; name = winter; path = ../../winter; sourceTree = "<group>"; };
-		72DBD455251364DE00D94341 /* spring */ = {isa = PBXFileReference; lastKnownFileType = file; name = spring; path = ../../spring; sourceTree = "<group>"; };
-		72DBD457251364E200D94341 /* summer */ = {isa = PBXFileReference; lastKnownFileType = file; name = summer; path = ../../summer; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,10 +71,10 @@
 				72B0B5062508FF26006988DC /* ViewController.swift */,
 				72B0B5082508FF26006988DC /* Main.storyboard */,
 				7228CC71251328CB004B73F7 /* ExpansionViewController.swift */,
-				72DBD455251364DE00D94341 /* spring */,
-				72DBD457251364E200D94341 /* summer */,
-				72DBD451251364C500D94341 /* fall */,
-				72DBD453251364D000D94341 /* winter */,
+				72187D12251376300034D8E2 /* 春画像.jpg */,
+				72187D10251376280034D8E2 /* 夏画像.jpg */,
+				72187D0E251376200034D8E2 /* 秋画像.jpg */,
+				72187D0C251376190034D8E2 /* 冬画像.jpg */,
 				72B0B50B2508FF27006988DC /* Assets.xcassets */,
 				72B0B50D2508FF27006988DC /* LaunchScreen.storyboard */,
 				72B0B5102508FF27006988DC /* Info.plist */,
@@ -140,13 +140,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72187D0F251376200034D8E2 /* 秋画像.jpg in Resources */,
+				72187D0D251376190034D8E2 /* 冬画像.jpg in Resources */,
 				72B0B50F2508FF27006988DC /* LaunchScreen.storyboard in Resources */,
+				72187D11251376280034D8E2 /* 夏画像.jpg in Resources */,
 				72B0B50C2508FF27006988DC /* Assets.xcassets in Resources */,
+				72187D13251376300034D8E2 /* 春画像.jpg in Resources */,
 				72B0B50A2508FF26006988DC /* Main.storyboard in Resources */,
-				72DBD456251364DE00D94341 /* spring in Resources */,
-				72DBD452251364C500D94341 /* fall in Resources */,
-				72DBD458251364E200D94341 /* summer in Resources */,
-				72DBD454251364D000D94341 /* winter in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
