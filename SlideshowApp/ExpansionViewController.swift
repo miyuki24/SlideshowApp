@@ -17,11 +17,18 @@ class ExpansionViewController: UIViewController {
     @IBOutlet weak var backButton: UIButton!
     
     var image2:UIImage!
+    
+    var timer2:Timer!
    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         bigImage.image = image2
+        if (timer2 == nil) {
+            timer2.invalidate()
+            timer2 = nil
+        }
     }
+    
 }

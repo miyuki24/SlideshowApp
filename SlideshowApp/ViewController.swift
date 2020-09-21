@@ -10,10 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    //画像を表示する変数
     @IBOutlet weak var DefaultImageView: UIImageView!
     
-    //ラベルを表示する変数
     @IBOutlet weak var seasonLabel: UILabel!
     
     @IBOutlet weak var moveToButton: UIButton!
@@ -146,12 +144,15 @@ class ViewController: UIViewController {
             backButton.alpha = 1.0
         }
     }
-        
+    
+    //データを渡す
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         let expansionViewController:ExpansionViewController = segue.destination as! ExpansionViewController
         expansionViewController.image2 = seasonImageNames[slide_sec]
+        expansionViewController.timer2 = timer
     }
     
+    //戻るボタンで戻る
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
     }
     
