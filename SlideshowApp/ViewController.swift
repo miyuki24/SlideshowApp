@@ -107,7 +107,7 @@ class ViewController: UIViewController {
     //再生・停止ボタンを機能させる変数
     @IBAction func stopButton(_ sender: Any) {
         
-        //もしタイマーが再生中なら
+        //もしタイマーが再生になったら
         if (timer == nil) {
             
             //タイマーをセットする
@@ -148,8 +148,20 @@ class ViewController: UIViewController {
     //データを渡す
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         let expansionViewController:ExpansionViewController = segue.destination as! ExpansionViewController
+        
+        //画像のデータを渡す
         expansionViewController.image2 = seasonImageNames[slide_sec]
-        expansionViewController.timer2 = timer
+        
+        //データを渡す時のタイマーの動作（タイマーが動いている場合）
+        if (timer != nil) {
+            timer.invalidate()
+            timer = nil
+            stopButton.setTitle("再生", for: .normal)
+            moveToButton.isEnabled = true
+            backButton.isEnabled = true
+            moveToButton.alpha = 1.0
+            backButton.alpha = 1.0
+        }
     }
     
     //戻るボタンで戻る
